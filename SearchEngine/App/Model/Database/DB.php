@@ -3,6 +3,7 @@
 namespace SearchEngine\Model\Database;
 
 use PDO;
+use PDOException;
 use SearchEngine\Config\Config as Config;
 
 class DB {
@@ -32,7 +33,7 @@ class DB {
 		try{
 			self::$_connection = new PDO("mysql:host=".$config['host'].";db=".$config['db'],$config['username'],$config['password']);
 			return self::$_connection;
-		}catch(Exception $e)
+		}catch(PDOException $e)
 		{
 			trigger_error("Cannot connect to database ".$e->getMessage(),E_USER_ERROR);
 		}

@@ -11,7 +11,7 @@ class Config {
 			"DB" => [
 				"host" => "localhost",
 				"db" => "store",
-				"username" => "root",
+				"username" => "roots",
 				"password" => "",
 			],
 			"Templates" => [
