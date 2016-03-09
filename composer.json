@@ -1,0 +1,19 @@
+{
+    "name": "root/html",
+    "description": "Law Database",
+    "type": "Web",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Min Thuta Shein",
+            "email": "kyitaw1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+		"psr-4": {
+			"SearchEngine\\": "SearchEngine/App"
+		}
+    }
+}
