@@ -49,7 +49,7 @@ class Router {
 		}
 	}
 	
-	public static function auto($request='',$response='')
+	public static function auto()
 	{
 			
 		switch(self::getInstance()->request_method)
@@ -75,7 +75,7 @@ class Router {
 	
 	public static function get($request='',$response='')
 	{
-		if(self::auto($request,$response)=='GET')
+		if(self::auto()=='GET')
 		{
 			return self::manipulate($request,$response);
 		}
@@ -83,28 +83,28 @@ class Router {
 	
 	public static function post($request='',$response='')
 	{
-		if(self::auto($request,$response)=='POST')
+		if(self::auto()=='POST')
 		{
 			return self::manipulate($request,$response);
 		}
 	}
 	public static function put($request='',$response='')
 	{
-		if(self::auto($request,$response)=='PUT')
+		if(self::auto()=='PUT')
 		{
 			return self::manipulate($request,$response);
 		}
 	}
 	public static function delete($request='',$response='')
 	{
-		if(self::auto($request,$response)=='DELETE')
+		if(self::auto()=='DELETE')
 		{
 			return self::manipulate($request,$response);
 		}
 	}
 	public static function update($request='',$response='')
 	{
-		if(self::auto($request,$response)=='UPDATE')
+		if(self::auto()=='UPDATE')
 		{
 			return self::manipulate($request,$response);
 		}
